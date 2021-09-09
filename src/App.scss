@@ -1,0 +1,44 @@
+@import "./mixin/margin.scss";
+@import "./mixin/padding.scss";
+@import "./mixin/layout.scss";
+@import "./mixin/size.scss";
+
+#crud-table {
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+
+    .left-btn {
+      text-align: left;
+      padding-bottom: 0;
+    }
+
+    .right-btn {
+      text-align: right;
+      padding-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #crud-table {
+    .table-header {
+      display: flex;
+      justify-content: space-between;
+
+      .left-btn {
+        padding-bottom: auto;
+      }
+
+      .right-btn {
+        .p-input-icon-left {
+          width: 100%;
+          display: block;
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.layout {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+
+  .header, .footer {
+    flex: 0 0 auto;
+  }
+
+  .content {
+    flex: auto;
+  }
+}
